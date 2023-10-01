@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{box-sizing: border-box;}
+/* body{margin: 0;} */
+    
+.menu{background-color: red;
+overflow: auto;
+width: 100%;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.menu a{text-decoration: none;
+display: block;
+float: left;
+padding: 10px 10px;
+color: white;
+text-align: center;
+font-size: 20px;
+}
+
+.drop .btn{  
+border: none;
+padding: 10px 10px;
+text-align: center;
+background-color: initial;
+color: white;
+font-size: 20px;
+font-family: initial;
+margin: 0px;
+cursor: pointer;
+}
+
+
+.menu a:hover, a:focus, .btn:hover, .btn:focus {background-color: black;}
+
+
+.drop{float: left;
+overflow: hidden;}
+
+.btn-con{  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+.btn-con a{float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;}
+
+
+
+.btn-con a:hover{background-color: gree;}
+</style>
+
+</head>
+<body>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#">Privacy</a>
+<div class="drop">
+<button class="btn">Dropdown</button>
+<div class="btn-con">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>    
+
+
+
+</body>
+</html>
